@@ -49,10 +49,10 @@ async def start(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("‼️ Join Updates Channel ‼️", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("♻️ Try Again ♻️", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -103,7 +103,7 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("‼️ Join Updates Channel ‼️", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -117,8 +117,8 @@ async def start(bot, message):
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton("Help", callback_data="help 🤔"),
+                InlineKeyboardButton("About", callback_data="about 💡")
                 ]]
             )
         )
@@ -331,7 +331,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('Deploy Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('🕵️ Master 🕵️', url='https://t.me/FM_Admin_owner')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
